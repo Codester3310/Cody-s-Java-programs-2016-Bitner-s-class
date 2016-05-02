@@ -1,0 +1,45 @@
+
+package celcius.conversion.farenhieght;
+
+import java.util.Scanner;
+
+public class CelciusConversionFarenhieght {
+
+ 
+    
+    public static void main(String[] args) {
+        // T(°F) = T(°C) × 1.8 + 32.//
+        
+Scanner reader = new Scanner(System.in);
+
+        double fahren, celsius; // these are my variables//
+        
+        String conversion;
+        
+        System.out.println("Are we converting to Celsius or Fahrenheit");  //system allows you to convert to either celsius or Fahrenheit//
+        
+        conversion = reader.nextLine();
+        
+       if (conversion == "Celsius"){// if you choose "Celcius" then you will convert to Fahrenheit, and vise versa.//
+           
+        System.out.println("Please enter your Fahrenheit degree varaible");
+        
+        fahren = reader.nextDouble();
+        
+       celsius = (fahren / 1.8) + 32;
+       
+       System.out.println("your conversion from fahrenheit to celsiuis is  " + celsius);}
+               
+       else {
+           System.out.println("Please enter your celsius degree variable");
+           
+            celsius = reader.nextDouble();
+       
+            fahren = ((celsius * 1.8) + 32);
+               
+            System.out.println("your conversion from fahrenheit to celsiuis is  " + fahren);
+       }
+       
+       }
+    }
+    
